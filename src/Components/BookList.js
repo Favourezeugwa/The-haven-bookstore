@@ -1,15 +1,18 @@
 import React from 'react';
-import PropTypes, { Object } from 'prop-types';
+import PropTypes, { Array } from 'prop-types';
 import Book from './Book';
 
-const BookList = ({ books }) => (
-  <ul>
-    { books.map((book) => <Book key={book.id} book={book} />)}
-  </ul>
-);
+const BookList = (props) => {
+  const { books } = props;
+  return (
+    <ul>
+      { books.map((book) => <Book key={book.id} book={book} />)}
+    </ul>
+  );
+};
 
 BookList.propTypes = {
-  books: PropTypes.instanceOf(Object).isRequired,
-
+  books: PropTypes.instanceOf(Array).isRequired,
 };
+
 export default BookList;
