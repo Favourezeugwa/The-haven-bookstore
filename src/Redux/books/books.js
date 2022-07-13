@@ -14,7 +14,7 @@ export const removeBook = (id) => ({
 const booksReducer = (state = books, action = {}) => {
   switch (action.type) {
     case CREATE:
-      return [...state, action.book];
+      return [...books, action.book];
     case REMOVE:
       return state.filter((book) => book.id !== action.id);
     default:
