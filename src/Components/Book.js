@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../Redux/books/books';
 
 const Book = (props) => {
   const { book } = props;
@@ -8,15 +10,24 @@ const Book = (props) => {
     title, author, percentageCompleted, currentChapter,
   } = book;
 
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(removeBook(book.id));
+  };
+
   return (
     <li className="single-book">
       <div>
         <p>Action</p>
         <h2>{title}</h2>
         <h3>{author}</h3>
-        <button type="button">Comments</button>
-        <button type="button">Remove</button>
-        <button type="button">Edit</button>
+        <button
+          type="button"
+          onClick={handleClick}
+        >
+          Remove
+        </button>
       </div>
       <div>
         {percentageCompleted}
@@ -36,12 +47,20 @@ const Book = (props) => {
   );
 };
 
+Book.defaultProps = {
+  book: {},
+  title: '',
+  author: '',
+  percentageCompleted: 0,
+  currentChapter: 0,
+};
+
 Book.propTypes = {
-  book: PropTypes.instanceOf(Object).isRequired,
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  percentageCompleted: PropTypes.number.isRequired,
-  currentChapter: PropTypes.number.isRequired,
+  book: PropTypes.instanceOf(Object),
+  title: PropTypes.string,
+  author: PropTypes.string,
+  percentageCompleted: PropTypes.number,
+  currentChapter: PropTypes.number,
 };
 
 export default Book;

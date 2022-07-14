@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes, { Array } from 'prop-types';
+import PropTypes from 'prop-types';
 import Book from './Book';
 
 const BookList = (props) => {
@@ -11,8 +11,12 @@ const BookList = (props) => {
   );
 };
 
+BookList.defaultProps = {
+  books: [],
+};
+
 BookList.propTypes = {
-  books: PropTypes.instanceOf(Array).isRequired,
+  books: PropTypes.instanceOf(Object),
 };
 
 export default BookList;
