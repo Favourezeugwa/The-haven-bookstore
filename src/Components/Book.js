@@ -22,14 +22,12 @@ const Book = (props) => {
         <p>Action</p>
         <h2>{title}</h2>
         <h3>{author}</h3>
-        {/* <button type="button">Comments</button> */}
         <button
           type="button"
           onClick={handleClick}
         >
           Remove
         </button>
-        {/* <button type="button">Edit</button> */}
       </div>
       <div>
         {percentageCompleted}
