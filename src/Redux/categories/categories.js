@@ -1,4 +1,4 @@
-const CHECK_STATUS = 'bookstore-app/categories/CHECK_STATUS';
+const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
 
 // const state = [];
 

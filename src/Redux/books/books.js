@@ -1,5 +1,5 @@
-const CREATE = 'bookstore-app/books/CREATE';
-const REMOVE = 'bookstore-app/books/REMOVE';
+const CREATE = 'bookstore/books/CREATE';
+const REMOVE = 'bookstore/books/REMOVE';
 
 const books = [];
 
