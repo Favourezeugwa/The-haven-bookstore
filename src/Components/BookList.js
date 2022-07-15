@@ -4,6 +4,7 @@ import Book from './Book';
 
 const BookList = (props) => {
   const { books } = props;
+
   return (
     <ul>
       { Object.keys(books).map((itemId) => <Book key={itemId} book={books[itemId]} id={itemId} />)}
