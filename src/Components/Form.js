@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { createBook } from '../Redux/books/books';
+import { newBook } from '../Redux/books/books';
 
 const Form = () => {
   const [title, setTitle] = useState('');
@@ -12,12 +12,11 @@ const Form = () => {
   const handleClick = (e) => {
     e.preventDefault();
     if (title !== '' && author !== '') {
-      dispatch(createBook({
-        id: uuidv4(),
+      dispatch(newBook({
+        item_id: uuidv4(),
         title,
         author,
-        percentageCompleted: 8,
-        currentChapter: 3,
+        category: 'Fiction',
       }));
       setTitle('');
       setAuthor('');
