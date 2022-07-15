@@ -1,3 +1,7 @@
+const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/';
+const ID = 'NzpAshi17nqjc0tUv5F8';
+const URL = `${baseURL + ID}/books`;
+
 const CREATE = 'bookstore/books/CREATE';
 const REMOVE = 'bookstore/books/REMOVE';
 
@@ -9,32 +13,39 @@ export const removeBook = (id) => ({
   type: REMOVE, id,
 });
 
-const initialState = [{
-  id: 1,
-  title: 'The hunger games',
-  author: 'Gold Smith',
-  percentageCompleted: 64,
-  currentChapter: 17,
-},
-{
-  id: 2,
-  title: 'Dune',
-  author: 'Meyer',
-  percentageCompleted: 8,
-  currentChapter: 3,
-},
-{
-  id: 3,
-  title: 'Capital in the 21st century',
-  author: 'Smith',
-  percentageCompleted: 0,
-  currentChapter: 1,
-}];
+// fetch new book
+export const fetchBooks = () => (dispatch) => {
+  fetch(URL).then((response) => response.json()).then((data) => dispatch(createBook(data)));
+};
+
+// create a new book
+export const newBook = (book) => async (dispatch) => {
+  await fetch(URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(book),
+  }).then(() => dispatch(fetchBooks()));
+};
+
+// delete a book
+export const deleteBook = (id) => async (dispatch) => {
+  await fetch(`${URL}/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ id }),
+  }).then(() => dispatch(fetchBooks()));
+};
+
+const initialState = {};
 
 const booksReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case CREATE:
-      return [...state, action.book];
+      return action.book;
     case REMOVE:
       return state.filter((book) => book.id !== action.id);
     default:

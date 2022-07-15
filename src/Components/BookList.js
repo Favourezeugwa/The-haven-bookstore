@@ -6,7 +6,7 @@ const BookList = (props) => {
   const { books } = props;
   return (
     <ul>
-      { books.map((book) => <Book key={book.id} book={book} />)}
+      { Object.keys(books).map((itemId) => <Book key={itemId} book={books[itemId]} id={itemId} />)}
     </ul>
   );
 };
