@@ -5,15 +5,24 @@
 }
 
 body {
-  padding: 5%;
-  background-color: #f5f6fa;
+  padding: 4%;
+  background-image: url("./images/heart.bg.img.jpg");
 }
 
 li {
   list-style: none;
 }
 
-.app-container {
-  border: 2px solid red;
+a {
+  text-decoration: none;
 }
 
+.app-container {
+  border: 2px solid #f5f6fa;
+  box-shadow: 0px 2px 4px 2px rgb(78, 78, 78);
+}
+
+.book-shelve {
+  padding: 50px;
+  background-color: #f5f6fa;
+}

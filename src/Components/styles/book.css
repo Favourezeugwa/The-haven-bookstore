@@ -2,5 +2,132 @@
   background-color: #fff;
   border-radius: 4px;
   border: 1px solid #e8e8e8;
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
+  margin-bottom: 20px;
+}
+
+.book-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.category {
+  font-weight: 700;
+  color: #575757;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 25px;
+  letter-spacing: -0.2px;
+  font-weight: 700;
+  color: #000;
+}
+
+.author {
+  font-size: 18px;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.btn-container {
+  display: flex;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: #4386bf;
+  font-size: 14px;
+  font-weight: 300;
+  align-items: center;
+}
+
+.btn-remove {
+  background-color: transparent;
+  border: none;
+  color: #4386bf;
+  font-size: 14px;
+  font-weight: 300;
+  align-items: center;
+  cursor: pointer;
+}
+
+hr {
+  border-right: 1px solid #4386bf;
+  height: 20px;
+  margin: 20px;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  margin-top: 20px;
+}
+
+.first {
+  display: flex;
+}
+
+.circular-container {
+  width: 5.625rem;
+  height: 5.625rem;
+  padding: 0.63rem 0.625rem 0.75rem 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid #307bbe;
+  border-left-color: #e8e8e8;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.percent {
+  font-size: 40px;
+  font-weight: 500;
+  color: #121212;
+}
+
+.true {
+  font-size: 16px;
+  color: #a7a7a7;
+}
+
+.progress-line {
+  height: 60px;
+  border-right: 1px solid #ebebebc7;
+  margin-right: 20px;
+}
+
+.current {
+  font-size: 15px;
+  color: #a7a7a7;
+}
+
+.chapter {
+  margin: 5px 0 20px 0;
+  color: #575757;
+}
+
+.update {
+  padding: 10px;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  width: 200px;
 }
