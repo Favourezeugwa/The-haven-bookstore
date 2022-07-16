@@ -10,6 +10,11 @@
   color: #fff;
   width: 200px;
   margin: 50px 0 80px 40px;
+  cursor: pointer;
+}
+
+.btn-categories:hover {
+  background-color: #5f2140;
 }
 
 .status {

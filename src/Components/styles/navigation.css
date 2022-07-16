@@ -27,6 +27,7 @@ a {
 
 a:hover {
   color: #64222b;
+  text-decoration: underline;
 }
 
 .user-icon {
