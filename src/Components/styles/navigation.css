@@ -8,9 +8,7 @@ nav {
 }
 
 .logo-title {
-  color: #0290ff;
-
-  /* color: #ac3a73; */
+  color: #ac3a73;
   font-size: 30px;
   font-weight: 700;
 }
@@ -28,7 +26,7 @@ a {
 }
 
 a:hover {
-  color: #121212;
+  color: #64222b;
 }
 
 .user-icon {

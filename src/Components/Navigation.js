@@ -5,7 +5,7 @@ import { FaUser } from 'react-icons/fa';
 
 const Navigation = () => {
   const iconStyle = {
-    color: '#0290ff',
+    color: '#ac3a73',
     cursor: 'pointer',
   };
 

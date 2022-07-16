@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-/* body {
+body {
   padding: 4%;
   background-image: url("./images/heart.bg.img.jpg");
-} */
+}
 
 li {
   list-style: none;

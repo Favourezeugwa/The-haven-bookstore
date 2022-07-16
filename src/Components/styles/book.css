@@ -33,7 +33,7 @@
 .author {
   font-size: 18px;
   font-weight: 300;
-  color: #4386bf;
+  color: #742241;
 }
 
 .btn-container {
@@ -43,7 +43,7 @@
 .btn {
   background-color: transparent;
   border: none;
-  color: #4386bf;
+  color: #742241;
   font-size: 14px;
   font-weight: 300;
   align-items: center;
@@ -52,7 +52,7 @@
 .btn-remove {
   background-color: transparent;
   border: none;
-  color: #4386bf;
+  color: #742241;
   font-size: 14px;
   font-weight: 300;
   align-items: center;
@@ -60,7 +60,7 @@
 }
 
 hr {
-  border-right: 1px solid #4386bf;
+  border-right: 1px solid #ac3a73;
   height: 20px;
   margin: 20px;
 }
@@ -90,9 +90,7 @@ hr {
   border-radius: 50%;
   width: 4.25rem;
   height: 4.25rem;
-  border: 5px solid #307bbe;
-
-  /* border: 5px solid #ac3a73; */
+  border: 5px solid #8a2d54;
   border-left-color: #e8e8e8;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -127,9 +125,7 @@ hr {
 
 .update {
   padding: 10px;
-  background-color: #0290ff;
-
-  /* background-color: #ac3a73; */
+  background-color: #ac3a73;
   border: none;
   border-radius: 5px;
   color: #fff;

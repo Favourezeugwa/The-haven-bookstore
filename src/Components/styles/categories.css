@@ -4,12 +4,12 @@
 
 .btn-categories {
   padding: 10px;
-  background-color: #0290ff;
+  background-color: #ac3a73;
   border: none;
   border-radius: 5px;
   color: #fff;
   width: 200px;
-  margin: 40px 0 60px 40px;
+  margin: 50px 0 80px 40px;
 }
 
 .status {
@@ -17,5 +17,5 @@
   font-size: 30px;
   font-weight: 500;
   margin-left: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
