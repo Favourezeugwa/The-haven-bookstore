@@ -8,7 +8,7 @@ import Categories from './Components/Categories';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <Router>
         <Navigation />
         <Routes>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { newBook } from '../Redux/books/books';
+import './styles/form.css';
 
 const Form = () => {
   const [title, setTitle] = useState('');
@@ -16,7 +17,7 @@ const Form = () => {
         item_id: uuidv4(),
         title,
         author,
-        category: 'Fiction',
+        category: 'Science Fiction',
       }));
       setTitle('');
       setAuthor('');
@@ -25,8 +26,8 @@ const Form = () => {
 
   return (
     <div>
-      <hr />
-      <h2>ADD NEW BOOK</h2>
+      <hr className="form-line" />
+      <h2 className="form-header">ADD NEW BOOK</h2>
       <form>
         <input
           type="text"
@@ -42,6 +43,7 @@ const Form = () => {
         />
         <button
           type="submit"
+          className="form-btn"
           onClick={handleClick}
         >
           ADD BOOK

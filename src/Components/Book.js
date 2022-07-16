@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { deleteBook } from '../Redux/books/books';
+import './styles/book.css';
 
 const Book = (props) => {
   const { id, book } = props;
@@ -18,29 +19,55 @@ const Book = (props) => {
 
   return (
     <li className="single-book">
-      <div>
-        <p>{category}</p>
-        <h2>{title}</h2>
-        <h3>{author}</h3>
-        <button
-          type="button"
-          onClick={handleClick}
-        >
-          Remove
-        </button>
+      <div className="book-content">
+        <div className="book-info">
+          <p className="category">{category}</p>
+          <h2 className="title">{title}</h2>
+          <h3 className="author">{author}</h3>
+          <div className="btn-container">
+            <button
+              type="button"
+              className="btn"
+            >
+              Comments
+            </button>
+            <hr />
+            <button
+              type="button"
+              className="btn-remove"
+              onClick={handleClick}
+            >
+              Remove
+            </button>
+            <hr />
+            <button
+              type="button"
+              className="btn"
+            >
+              Edit
+            </button>
+          </div>
+        </div>
+        <div className="progress-container">
+          <div className="first">
+            <div className="circular-container">
+              <div className="circle" />
+            </div>
+            <div className="completed">
+              <p className="percent">10%</p>
+              <p className="true">Completed</p>
+            </div>
+          </div>
+          <hr className="progress-line" />
+          <div className="second">
+            <h2 className="current">CURRENT CHAPTER</h2>
+            <h3 className="chapter">
+              Chapter 1
+            </h3>
+            <button type="button" className="update">UPDATE PROGRESS</button>
+          </div>
+        </div>
       </div>
-      <div>
-        10%
-        <span>completed</span>
-      </div>
-      <div>
-        <h2>CURRENT CHAPTER</h2>
-        <h3>
-          Chapter 1
-        </h3>
-        <button type="button">UPDATE PROGRESS</button>
-      </div>
-      <hr />
     </li>
   );
 };
