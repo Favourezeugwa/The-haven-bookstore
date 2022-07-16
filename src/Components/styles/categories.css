@@ -1,0 +1,21 @@
+.categories-body {
+  background-color: #f5f6fa;
+}
+
+.btn-categories {
+  padding: 10px;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  width: 200px;
+  margin: 40px 0 60px 40px;
+}
+
+.status {
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 40px;
+  margin-bottom: 60px;
+}
