@@ -1,0 +1,33 @@
+.form-line {
+  border-top: 1px solid #d1d1d1;
+  height: 0.125rem;
+  width: 100%;
+  margin: 40px 0 20px 0;
+}
+
+.form-header {
+  font-size: 22px;
+  color: #575757;
+}
+
+form {
+  margin-top: 15px;
+}
+
+input {
+  margin-right: 30px;
+  width: 38%;
+  padding: 15px 0 15px 5px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+}
+
+.form-btn {
+  padding: 15px;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  width: 150px;
+  cursor: pointer;
+}
