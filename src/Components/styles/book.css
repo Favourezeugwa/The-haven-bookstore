@@ -91,6 +91,7 @@ hr {
   width: 4.25rem;
   height: 4.25rem;
   border: 5px solid #307bbe;
+  /* border: 5px solid #ac3a73; */
   border-left-color: #e8e8e8;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -126,6 +127,7 @@ hr {
 .update {
   padding: 10px;
   background-color: #0290ff;
+  /* background-color: #ac3a73; */
   border: none;
   border-radius: 5px;
   color: #fff;

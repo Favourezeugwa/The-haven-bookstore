@@ -26,9 +26,14 @@ input {
 .form-btn {
   padding: 15px;
   background-color: #0290ff;
+  /* background-color: #ac3a73; */
   border: none;
   border-radius: 5px;
   color: #fff;
   width: 150px;
   cursor: pointer;
 }
+
+/* .form-btn:hover {
+  background-color: #5f2140;
+} */
