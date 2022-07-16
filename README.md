@@ -6,11 +6,9 @@
 
 ## Overview
 
-### Screenshots
-
 ## Live Demo
 
-[link to live demo on Netlify] coming soon!
+[Netlify](https://the-haven-bookstore.netlify.app/)
 
 ## Built With
 
@@ -20,6 +18,7 @@
 - Hooks
 - API's
 - Redux
+- Redux Thunk
 
 ## Getting Started
 
@@ -50,7 +49,6 @@ $ http://localhost:3001/
 - GitHub: [@Favourezeugwa](https://github.com/Favourezeugwa)
 - LinkedIn: [Favour Amarachi Ezeugwa](https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/)
 - Twitter:[@Favour_ezeugwa](https://twitter.com/Favour_ezeugwa)
-
 
 ## 🤝 Contributing
 

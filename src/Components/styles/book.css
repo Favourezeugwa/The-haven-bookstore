@@ -59,6 +59,11 @@
   cursor: pointer;
 }
 
+.btn-remove:hover {
+  color: #521d31;
+  text-decoration: underline;
+}
+
 hr {
   border-right: 1px solid #ac3a73;
   height: 20px;
