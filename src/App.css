@@ -20,7 +20,7 @@ a {
 .app-container {
   border: 2px solid #f5f6fa;
   background-color: #f5f6fa;
-  box-shadow: 0px 2px 4px 2px rgb(78, 78, 78);
+  box-shadow: 0 2px 4px 2px rgb(78, 78, 78);
 }
 
 .book-shelve {
