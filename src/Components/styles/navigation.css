@@ -1,0 +1,40 @@
+nav {
+  padding: 24px 4%;
+  background-color: #fff;
+  border-bottom: 2px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo-title {
+  color: #0290ff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.navLinks {
+  display: flex;
+  flex-grow: 1;
+  gap: 40px;
+  letter-spacing: 1.8px;
+  font-size: 14px;
+}
+
+a {
+  color: rgb(161, 159, 159);
+}
+
+a:hover {
+  color: #121212;
+}
+
+.user-icon {
+  cursor: pointer;
+  padding: 10px;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+}

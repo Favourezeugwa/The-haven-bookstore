@@ -40,7 +40,6 @@ const Book = (props) => {
         </h3>
         <button type="button">UPDATE PROGRESS</button>
       </div>
-      <hr />
     </li>
   );
 };

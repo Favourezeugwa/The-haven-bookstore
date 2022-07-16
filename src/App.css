@@ -5,8 +5,15 @@
 }
 
 body {
-  padding: 4%;
+  padding: 5%;
   background-color: #f5f6fa;
 }
 
+li {
+  list-style: none;
+}
+
+.app-container {
+  border: 2px solid red;
+}
 
