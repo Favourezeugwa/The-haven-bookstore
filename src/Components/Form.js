@@ -27,7 +27,9 @@ const Form = () => {
   return (
     <div>
       <hr className="form-line" />
-      <h2 className="form-header">ADD NEW BOOK</h2>
+      <h2 className="form-header">
+        ADD NEW BOOK
+      </h2>
       <form>
         <input
           type="text"

@@ -2,15 +2,29 @@ nav {
   padding: 24px 4%;
   background-color: #fff;
   border-bottom: 1px solid #e8e8e8;
+  box-shadow: 2px 2px 4px 0 rgb(236, 236, 236);
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+@keyframes myAnimation {
+  0% {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes myIcon {
+  0% {
+    transform: translateX(50px);
+  }
 }
 
 .logo-title {
   color: #ac3a73;
   font-size: 30px;
   font-weight: 700;
+  animation: myAnimation 3s;
 }
 
 .navLinks {
@@ -19,6 +33,7 @@ nav {
   gap: 40px;
   letter-spacing: 1.8px;
   font-size: 14px;
+  animation: myAnimation 3s;
 }
 
 a {
@@ -38,4 +53,5 @@ a:hover {
   border-radius: 50%;
   border: 1px solid #e8e8e8;
   background-color: #fff;
+  animation: myIcon 3s;
 }
