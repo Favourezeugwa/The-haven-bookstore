@@ -6,6 +6,10 @@
 
 ## Overview
 
+## Screenshot
+
+![](./src/images/haven.desktop.snip.PNG)
+
 ## Live Demo
 
 [Netlify](https://the-haven-bookstore.netlify.app/)

@@ -6,7 +6,7 @@
 
 body {
   padding: 4%;
-  background-image: url("./images/heart.bg.img.jpg");
+  background-image: url("./images/books.shelf.jpg");
 }
 
 li {
@@ -25,5 +25,4 @@ a {
 
 .book-shelve {
   padding: 50px;
-  background-color: #f5f6fa;
 }
